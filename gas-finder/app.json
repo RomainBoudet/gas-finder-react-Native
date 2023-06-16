@@ -1,6 +1,7 @@
 {
   "expo": {
     "name": "gas-finder",
+    "displayName": "gas-Finder",
     "slug": "gas-finder",
     "version": "1.0.0",
     "orientation": "portrait",
