@@ -112,12 +112,12 @@ export const GazComponent = () => {
           {gazDatas &&
             product === 'Tous' &&
             gazDatas.map((result) => {
-              return <GazCard data={result} />
+              return <GazCard key={result.recordid} data={result} />
             })}
           {gazDatas &&
             product !== 'Tous' &&
             gazDatas.map((result) => {
-              return <GazCard data={result} />
+              return <GazCard key={result.recordid}  data={result} />
             })}
         </ScrollView>
       ) : (

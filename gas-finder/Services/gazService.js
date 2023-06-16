@@ -14,5 +14,5 @@ export function getCustomGaz(Gaz, city) {
     .get(
       `https://data.economie.gouv.fr/api/records/1.0/search/?dataset=prix-carburants-fichier-instantane-test-ods-copie&q=${city}&rows=50&sort=-prix_valeur&facet=id&facet=adresse&facet=ville&facet=prix_maj&facet=prix_nom&facet=com_arm_name&facet=epci_name&facet=dep_name&facet=reg_name&facet=services_service&refine.prix_nom=${Gaz}`
     )
-    .then((res) => res.data.records)
+    .then((res) =>{console.log(res.data.records),res.data.records})
 }
